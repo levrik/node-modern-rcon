@@ -2,7 +2,7 @@ node-modern-rcon [![npm package](https://img.shields.io/npm/v/modern-rcon.svg?st
 ==============
 A modern RCON client implementation written in ES2015
 
-**NOTE: This has been only tested with Minecraft. So be aware of possible bugs with other server implementations. Feel free to submit a PR if you have any problems.** 
+**NOTE: This has only been tested with Minecraft. So be aware of possible bugs with other server implementations. Feel free to submit a PR if you have any problems.**
 
 ## Installation
 
@@ -46,11 +46,11 @@ rcon.connect().then(() => {
 
 ## Contribute
 
-1. Install the dependencies by `npm install`
-2. Setup a Minecraft Server for the tests by `npm run setup-minecraft`  
+1. Install the dependencies with `npm install`
+2. Setup a Minecraft Server for the tests by using `npm run setup-minecraft`  
    **Important: This script will automatically accept the [Minecraft EULA](https://account.mojang.com/documents/minecraft_eula)**
 
-To run the tests you need to start the Minecraft Server by `npm run start-minecraft` in another Terminal.
+To run the tests you need to start the Minecraft Server with `npm run start-minecraft` in another Terminal.
 
 ## License
 
