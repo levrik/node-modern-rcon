@@ -1,0 +1,37 @@
+{
+  "name": "modern-rcon",
+  "version": "1.0.0",
+  "description": "A modern RCON client implementation written in ES2015",
+  "keywords": [
+    "rcon",
+    "minecraft",
+    "es2015",
+    "es6"
+  ],
+  "main": "rcon.js",
+  "repository": "levrik/node-modern-rcon",
+  "author": "Levin Ricket <me@levrik.io>",
+  "license": "MIT",
+  "scripts": {
+    "setup-minecraft": "cd tests && rimraf .server && mkdirp .server && nugget https://s3.amazonaws.com/Minecraft.Download/versions/1.11.2/minecraft_server.1.11.2.jar -o .server/minecraft_server.jar && ncp fixtures/server.properties .server/server.properties && ncp fixtures/eula.txt .server/eula.txt",
+    "start-minecraft": "cd tests/.server && java -jar minecraft_server.jar nogui",
+    "test": "mocha --compilers js:async-to-gen/register tests/**/*.spec.js"
+  },
+  "dependencies": {
+    "async-to-gen": "^1.3.0",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "rcon": "^1.0.2",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "mocha": "^3.2.0",
+    "ncp": "^2.0.0",
+    "nugget": "^2.0.1",
+    "rimraf": "^2.5.4"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
