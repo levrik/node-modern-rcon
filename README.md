@@ -44,6 +44,14 @@ rcon.connect().then(() => {
 });
 ```
 
+## Contribute
+
+1. Install the dependencies by `npm install`
+2. Setup a Minecraft Server for the tests by `npm run setup-minecraft`  
+   **Important: This script will automatically accept the [Minecraft EULA](https://account.mojang.com/documents/minecraft_eula)**
+
+To run the tests you need to start the Minecraft Server by `npm run start-minecraft` in another Terminal.
+
 ## License
 
 [MIT](LICENSE)
