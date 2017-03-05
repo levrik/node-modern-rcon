@@ -1,6 +1,6 @@
 {
   "name": "modern-rcon",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A modern RCON client implementation written in ES2015",
   "keywords": [
     "rcon",
