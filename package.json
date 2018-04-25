@@ -1,6 +1,6 @@
 {
   "name": "modern-rcon",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A modern RCON client implementation written in ES2015",
   "keywords": [
     "rcon",
@@ -9,6 +9,7 @@
     "es6"
   ],
   "main": "rcon.js",
+  "typings": "rcon.d.ts",
   "repository": "levrik/node-modern-rcon",
   "author": "Levin Ricket <me@levrik.io>",
   "license": "MIT",
