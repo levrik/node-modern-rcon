@@ -28,7 +28,7 @@ class Rcon {
   constructor(host, port, password, timeout) {
     if (!host || !host.trim()) throw new TypeError('"host" argument must be not empty');
     this.host = host;
-    if (typeof port === 'string') {
+    if (isNaN(port)) {
       [port, password, timeout] = [null, port, password];
     }
     this.port = port || 25575;
